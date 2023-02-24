@@ -10,6 +10,7 @@ public class WeaponController : MonoBehaviour
 
     //Making audio
     public AudioClip SwordAttackSound;
+    public AudioClip Grunt;
 
     void Update() 
     {
@@ -32,6 +33,8 @@ public class WeaponController : MonoBehaviour
         //sound
         AudioSource ac = GetComponent<AudioSource>();
         ac.PlayOneShot(SwordAttackSound);
+
+        ac.PlayOneShot(Grunt);
 
 
         StartCoroutine(ResetAttackCooldown());
