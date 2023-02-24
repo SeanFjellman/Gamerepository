@@ -23,7 +23,6 @@ public class Health : MonoBehaviour
     public AudioClip Scream;
 
     public float AudioCoolDown = 5.0f;
-
     private void Update() 
     {
         //loads game if character dies
@@ -51,6 +50,7 @@ public class Health : MonoBehaviour
         {
             EnemyHealing(EnemyHeals);
         }
+        
         //Destroying Spider
         if(EnemyHealthAmount <= 0) 
         {
