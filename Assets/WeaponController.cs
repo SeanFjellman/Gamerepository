@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class WeaponController : MonoBehaviour
 {
+
     public GameObject IceSword;
     public bool CanAttack = true;
     public float AttackCoolDown = 1.0f;
