@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class isHit : MonoBehaviour
+public class Test : MonoBehaviour
 {
+    public Health Health;
 
-    public Health PlayerHealth;
     // Start is called before the first frame update
     void Start()
     {
-       
+        Health.Damage = 2.0f;
     }
 
     // Update is called once per frame
