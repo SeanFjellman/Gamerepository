@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[CreateAssetMenu]
 public class Health : MonoBehaviour
 {
     public Image healthBar;
@@ -42,10 +43,10 @@ public class Health : MonoBehaviour
         }
 
         //Damages Enemy
-        if (Input.GetMouseButtonDown(0)) 
+        /*if (Input.GetMouseButtonDown(0)) 
         {
             EnemyTakeDamge(EnemyDamge);
-        }
+        }*/
         if (Input.GetKeyDown(KeyCode.F)) 
         {
             EnemyHealing(EnemyHeals);

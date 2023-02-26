@@ -6,15 +6,23 @@ public class isHit : MonoBehaviour
 {
 
     public Health PlayerHealth;
+    public bool isItHit = false;
     // Start is called before the first frame update
-    void Start()
-    {
-       
-    }
-
     // Update is called once per frame
     void Update()
     {
-        
+        if (isItHit = true)
+        {
+            PlayerHealth.EnemyTakeDamge(PlayerHealth.EnemyDamge);
+        }
+    }
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Enemy")
+        {
+            isItHit = true;
+        }
     }
 }

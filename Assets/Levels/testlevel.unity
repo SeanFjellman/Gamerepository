@@ -3605,6 +3605,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 94.853325
       objectReference: {fileID: 0}
+    - target: {fileID: 5118991781128383882, guid: 740e7ed8da5b6ad40b7cd6a528fb1121, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 5189083309841025246, guid: 740e7ed8da5b6ad40b7cd6a528fb1121, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0.7678037
@@ -7873,6 +7877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerHealth: {fileID: 0}
+  isItHit: 0
 --- !u!1001 &8399167678136820912
 PrefabInstance:
   m_ObjectHideFlags: 0
