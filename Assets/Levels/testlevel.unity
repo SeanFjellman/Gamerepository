@@ -5885,8 +5885,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1598060976}
-  - component: {fileID: 1598060975}
   - component: {fileID: 1598060978}
+  - component: {fileID: 1598060979}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -5894,30 +5894,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1598060975
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1598060974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 950305b3acf8a5e488b6e5d42d1e0cf6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 1205916529}
-  healthAmount: 100
-  Damage: 20
-  HealingPoints: 10
-  EnemyHealthBar: {fileID: 1333126103}
-  EnemyHealthAmount: 100
-  EnemyDamge: 20
-  EnemyHeals: 10
-  Spider: {fileID: 1571728654}
-  OhYeahhh: {fileID: 8300000, guid: ebf776061774e2546ab42c10c99df4a9, type: 3}
-  Scream: {fileID: 8300000, guid: 7e939a6ec8ddcd74eb9504be43e9f548, type: 3}
-  AudioCoolDown: 5
 --- !u!4 &1598060976
 Transform:
   m_ObjectHideFlags: 0
@@ -6029,6 +6005,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1598060979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598060974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bfe797396a98643ae8eec1e0418223, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1598088803
 PrefabInstance:
   m_ObjectHideFlags: 0
