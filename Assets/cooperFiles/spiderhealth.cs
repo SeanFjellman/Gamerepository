@@ -5,11 +5,10 @@ using UnityEngine;
 public class spiderhealth : MonoBehaviour
 {
     public GameObject Spider;
-
     private UnitHealth _spiderHealth = new UnitHealth(100, 100);
     public WeaponController wc;
     private SpiderSpawner spiderspawner = new SpiderSpawner();
-
+    
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Enemy" && wc.IsAttacking)
@@ -19,14 +18,14 @@ public class spiderhealth : MonoBehaviour
             Debug.Log("test");
         }
     }
-
+    
     public void Update()
     {
         if(_spiderHealth.Health <= 0)
         {
-            spiderspawner.newSpider = true;
-            spiderspawner.SpawnSpider();
+            Instantiate(Spider);
             Destroy(Spider);
+            SpiderHeal(100);
         }
 
         if (Input.GetKeyDown(KeyCode.R))
