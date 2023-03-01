@@ -13,6 +13,11 @@ public class spiderhealth : MonoBehaviour
         {
             SpiderTakeDmg(10);
             Debug.Log(_spiderHealth.Health);
+            Debug.Log("test");
+        }
+        else 
+        {
+            Debug.Log("eysath");
         }
     }
 

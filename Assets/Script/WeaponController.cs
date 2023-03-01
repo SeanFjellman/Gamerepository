@@ -12,6 +12,7 @@ public class WeaponController : MonoBehaviour
     public float AttackCoolDown = 1.0f;
     public bool RightClickPressed = false;
     public bool BlockRelease = false;
+    public bool IsAttacking = false;
 
     //Making audio
     public AudioClip SwordAttackSound;
@@ -49,6 +50,7 @@ public class WeaponController : MonoBehaviour
 
     public void SwordAttack() 
     {
+        IsAttacking = true;
         CanAttack = false;
         Animator anim = IceSword.GetComponent<Animator>();
         anim.SetTrigger("Attack");
@@ -74,8 +76,15 @@ public class WeaponController : MonoBehaviour
 
     IEnumerator ResetAttackCooldown()
     {
+        StartCoroutine(ResetAttackBool());
         yield return new WaitForSeconds(AttackCoolDown);
         CanAttack = true;
         CanBlock = true;
+    }
+
+    IEnumerator ResetAttackBool()
+    {
+        yield return new WaitForSeconds(1.0f);
+        IsAttacking = false;
     }
 }

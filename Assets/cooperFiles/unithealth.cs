@@ -45,7 +45,7 @@ public class UnitHealth
     {
         if (_currentHealth > 0)
         {
-            _currentHealth -= DmgAmount;
+            _currentHealth = _currentHealth - DmgAmount;
         }
     }
     public void HealUnit(int HealAmount)
