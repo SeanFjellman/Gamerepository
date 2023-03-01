@@ -5799,6 +5799,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da045281dabee8e419c5710c7f50ec28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpideSpawner: {fileID: 0}
   Spider: {fileID: 1571728654}
   wc: {fileID: 2084627838}
 --- !u!1001 &1580240972
@@ -7254,7 +7255,7 @@ GameObject:
   - component: {fileID: 2007881711}
   m_Layer: 0
   m_Name: SpideSpawner
-  m_TagString: Untagged
+  m_TagString: SpideSpawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7288,7 +7289,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wave: 1
   Spider: {fileID: 1571728654}
-  newSpider: 0
 --- !u!1001 &2011371510
 PrefabInstance:
   m_ObjectHideFlags: 0

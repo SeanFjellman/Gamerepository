@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class spiderhealth : MonoBehaviour
 {
+    public Transform SpideSpawner;
     public GameObject Spider;
     private UnitHealth _spiderHealth = new UnitHealth(100, 100);
     public WeaponController wc;
     private SpiderSpawner spiderspawner = new SpiderSpawner();
-    
+
+    //Vector3 location = new Vector3(GameObject.Find("SpideSpawner").transform.position);
+    void Start()
+    {
+
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Enemy" && wc.IsAttacking)
@@ -23,7 +29,7 @@ public class spiderhealth : MonoBehaviour
     {
         if(_spiderHealth.Health <= 0)
         {
-            Instantiate(Spider);
+            Instantiate(Spider, SpideSpawner.position, SpideSpawner.rotation);
             Destroy(Spider);
             SpiderHeal(100);
         }
