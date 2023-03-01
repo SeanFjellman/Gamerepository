@@ -1,1 +1,2 @@
 # Gamerepository
+is game
