@@ -5802,6 +5802,7 @@ MonoBehaviour:
   SpideSpawner: {fileID: 0}
   Spider: {fileID: 1571728654}
   wc: {fileID: 2084627838}
+  steve: {fileID: 0}
 --- !u!1001 &1580240972
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7268,7 +7269,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2007881709}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 32.17, y: 7.36, z: 55.92}
+  m_LocalPosition: {x: 35.7, y: 7.36, z: 64.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7284,11 +7285,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2007881709}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd8cc40596fa2074e8fef03f3de67911, type: 3}
+  m_Script: {fileID: 11500000, guid: da045281dabee8e419c5710c7f50ec28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wave: 1
+  SpideSpawner: {fileID: 2007881710}
   Spider: {fileID: 1571728654}
+  wc: {fileID: 0}
+  steve: {fileID: 0}
 --- !u!1001 &2011371510
 PrefabInstance:
   m_ObjectHideFlags: 0
