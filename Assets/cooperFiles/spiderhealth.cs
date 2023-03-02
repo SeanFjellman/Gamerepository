@@ -9,7 +9,7 @@ public class spiderhealth : MonoBehaviour
     private UnitHealth _spiderHealth = new UnitHealth(100, 100);
     public WeaponController wc;
     private SpiderSpawner spiderspawner = new SpiderSpawner();
-
+    public GameObject steve;
     //Vector3 location = new Vector3(GameObject.Find("SpideSpawner").transform.position);
     void Start()
     {
@@ -29,8 +29,8 @@ public class spiderhealth : MonoBehaviour
     {
         if(_spiderHealth.Health <= 0)
         {
-            Instantiate(Spider, SpideSpawner.position, SpideSpawner.rotation);
-            Destroy(Spider);
+            Instantiate(GameObject.FindGameObjectWithTag("Enemy"), SpideSpawner.position, SpideSpawner.rotation);
+            Destroy(GameObject.FindGameObjectWithTag("Enemy"));
             SpiderHeal(100);
         }
 
